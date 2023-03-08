@@ -1,30 +1,25 @@
-$(document).ready(function() {
-    loadHome();
-
-});
 
 function hideContent() {
-    //document.getElementById('home').style.display="block";
-    document.getElementById('mainContainer').innerHTML="";
+    document.getElementById('home').style.display="none";
+    document.getElementById('about').style.display="none";
+    document.getElementById('sales').style.display="none";
+    document.getElementById('contact').style.display="none";
+    
    
 }
 function loadHome(){
     hideContent();
-    $("#mainContainer").load("home.html");
-    $("#mainContainer").value=true;
+    document.getElementById('home').style.display="block";
 }
 function loadAbout(){
     hideContent();
-    $("#mainContainer").load("about.html");
-    $("#mainContainer").value=true;
+    document.getElementById('about').style.display="block";
 }
 function loadSales(){
     hideContent();
-    $("#mainContainer").load("sales.html");
-    $("#mainContainer").value=true;
+    document.getElementById('sales').style.display="block";
 }
 function loadContact(){
     hideContent();
-    $("#mainContainer").load("contact.html");
-    $("#mainContainer").value=true;
+    document.getElementById('contact').style.display="block";
 }
